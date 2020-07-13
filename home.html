@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EmpSalary</title>
+</head>
+<body>
+        <div class = "login">
+                <h1>prediction</h1>
+                <form action ="{{url_for('prediction')}}"method="post">
+                        <input type ="text" name="exp" placeholders="exp" />
+                        <input type ="text" name="cgpa(10)" placeholders="cgpa" />
+                        <input type ="text" name="cgpa(12)" placeholders="cgpa" />
+                        <input type ="text" name="cgpa(be)" placeholders="cgpa" />
+                
+                        <button type="submit" class="btn btn-primary btn-block btn-large">predict</button>
+                </form>
+                
+                <br>
+                {{ predict_text }}
+        </div>
+    
+</body>
+</html>
